@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <property name="LOG_FILE" value="spring.log"/>
+    <include resource="org/springframework/boot/logging/logback/file-appender.xml"/>
+    <root level="DEBUG">
+        <appender-ref ref="CONSOLE"/>
+       <!-- <appender-ref ref="FILE"/>-->
+    </root>
+    <!--<logger name="org.springframework.security" level="DEBUG">-->
+    <!--&lt;!&ndash;-->
+    <!--<appender-ref ref="CONSOLE"/>-->
+    <!--&ndash;&gt;-->
+    <!--<appender-ref ref="FILE" />-->
+    <!--</logger>-->
+
+</configuration>

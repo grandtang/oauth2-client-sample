@@ -1,0 +1,45 @@
+server:
+  port: 8181
+  servlet:
+    context-path: /client
+  session:
+    cookie:
+      name: UISESSION
+
+#security:
+#  oauth2:
+#    client:
+#      clientId: tonr
+#      clientSecret: secret
+#      accessTokenUri: http://localhost:9191/server/oauth/token
+#      userAuthorizationUri: http://localhost:9191/server/oauth/authorize
+#      scope: write,read
+#      grant-type: client_credentials
+
+
+
+#security:
+#  oauth2:
+#    client:
+#      clientId: tonr2
+#      clientSecret: secret
+#      accessTokenUri: http://localhost:9191/server/oauth/token
+#      userAuthorizationUri: http://localhost:9191/server/oauth/authorize
+#      pre-established-redirect-uri: http://localhost:8181/client/redirect
+#      scope: write,read
+#      grant-type: authorization_code
+#logging:
+#  config: classpath:spring-logback.xml
+
+
+security:
+  oauth2:
+    client:
+      clientId: tonr2
+      clientSecret: secret
+      accessTokenUri: http://localhost:9191/server/oauth/token
+      userAuthorizationUri: http://localhost:9191/server/oauth/authorize
+      scope: write,read
+      grant-type: authorization_code
+    resource:
+      user-info-uri: http://localhost:9191/server/user
