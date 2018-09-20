@@ -42,4 +42,4 @@ security:
       scope: write,read
       grant-type: authorization_code
     resource:
-      user-info-uri: http://localhost:9191/server/user
+      user-info-uri: http://localhost:9191/server/api/user
