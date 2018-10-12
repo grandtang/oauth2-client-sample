@@ -37,9 +37,9 @@ security:
     client:
       clientId: tonr2
       clientSecret: secret
-      accessTokenUri: http://localhost:9191/server/oauth/token
-      userAuthorizationUri: http://localhost:9191/server/oauth/authorize
+      accessTokenUri: http://localhost:8043/uaa/oauth/token
+      userAuthorizationUri: http://localhost:8043/uaa/oauth/authorize
       scope: write,read
       grant-type: authorization_code
     resource:
-      user-info-uri: http://localhost:9191/server/api/user
+      user-info-uri: http://localhost:8043/uaa/users/me
